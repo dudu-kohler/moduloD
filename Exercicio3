@@ -1,0 +1,55 @@
+<?php
+
+
+echo 'qual operaçao voce deseja realizar?';
+echo "\nsoma";
+echo "\nsubtracao";
+echo "\nmultiplicacao";
+echo "\ndivisao\n";
+
+
+$opçao = readline();
+
+switch($opçao) {
+    case "soma":
+        
+
+        echo "Digite um numero:";
+        $numero1 = trim(fgets(STDIN));
+        echo "Digite outro numero:";
+        $numero2 = trim(fgets(STDIN));
+        $soma = $numero1 + $numero2;
+        echo $soma;
+        break;
+
+    case "subtracao":
+        
+        echo 'Digite um numero:';
+        $numero1 = trim(fgets(STDIN));
+        echo "Digite outro numero:";
+        $numero2 = trim(fgets(STDIN));
+        $subtracao = $numero1 - $numero2;
+        echo $subtracao;
+        break;
+
+    case "multiplicacao":
+        
+        echo "Digite um numero:";
+        $numero1 = trim(fgets(STDIN));
+        echo "Digite outro numero:";
+        $numero2 = trim(fgets(STDIN));
+        $multiplicacao = $numero1 * $numero2;
+        echo $multiplicacao;
+        break;
+
+        case "divisao":
+            echo "Digite um numero:";
+            $numero1 = trim(fgets(STDIN));
+            echo "Digite outro numero:";
+            $numero2 = trim(fgets(STDIN));
+            $divisao = $numero1 / $numero2;
+            echo $divisao;
+            break;
+
+
+    }

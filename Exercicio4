@@ -1,0 +1,15 @@
+<?php
+
+echo 'Digite um numero:';
+$numero = readline();
+
+echo "\n1 X $numero = "  .  $numero * 1;
+print "\n2 X $numero = " . ($numero * 2);
+print "\n3 X $numero = " . ($numero * 3);
+print "\n4 X $numero = " . ($numero * 4);
+print "\n5 X $numero = " . ($numero * 5);
+print "\n6 X $numero = " . ($numero * 6);
+print "\n7 X $numero = " . ($numero * 7);
+print "\n8 X $numero = " . ($numero * 8);
+print "\n9 X $numero = " . ($numero * 9);
+print "\n10 X $numero = " . ($numero * 10);

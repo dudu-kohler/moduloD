@@ -1,0 +1,13 @@
+<?php
+
+$numero = 1;
+
+if ($numero % 2 == 1) {
+ 
+    echo ('é impar');
+
+} elseif($numero % 2 == 0) {
+ 
+    
+    echo ('é par');
+}
