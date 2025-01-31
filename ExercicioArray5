@@ -1,0 +1,10 @@
+<?php
+
+$meses = [null,'Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro',];
+$mes = null;
+
+echo "Escolha um numero de 1 a 12 para saber o mes\n";
+$mes = readline();
+
+$mesEscolhido = $mes = $meses[$mes];
+echo "$mesEscolhido";

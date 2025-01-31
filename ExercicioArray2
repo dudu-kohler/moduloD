@@ -1,0 +1,33 @@
+<?php
+
+$numerosC = 0;
+$numeroNeg = 0;
+$numeroPosi = 0;
+$numeroImpar = 0;
+$numeroPar = 0;
+do {
+
+    echo "Digite um numero \n";
+    $numero = [];
+    $numero = readline();
+
+    if (($numero) >= 0 || $numero <= 0) {
+        $numerosC++;
+    }
+
+    if ($numero <= -1) {
+        $numeroNeg++;
+    }
+
+    if ($numero >= 1) {
+        $numeroPosi++;
+    }
+
+    if ($numero % 2 == 1) {
+        $numeroImpar++;
+    } elseif ($numero % 2 == 0) {
+        $numeroPar++;
+    }
+} while (($numerosC) <= 9);
+
+echo "O numero de negativos digitados foram: $numeroNeg;\n O numero de positivos digitados foi: $numeroPosi;\n Pares: $numeroPar;\n Impares $numeroImpar";

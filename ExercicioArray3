@@ -1,0 +1,37 @@
+<?php
+$numeroC = 0;
+$conta = 0;
+$numeroResult = [];
+do {
+
+    echo "Digite um numero \n";
+    $numero[] = readline();
+
+    if (($numero) >= 0 || $numero <= 0) {
+        $numeroC++;
+    }
+} while (($numeroC) <= 9);
+
+echo 'Digite um numero para multiplicaçao: ';
+$numeroMulti = readline();
+$numeroResult[0] = ($numeroMulti) * ($numero[0]);
+$numeroResult[1] = ($numeroMulti) * ($numero[1]);
+$numeroResult[2] = ($numeroMulti) * ($numero[2]);
+$numeroResult[3] = ($numeroMulti) * ($numero[3]);
+$numeroResult[4] = ($numeroMulti) * ($numero[4]);
+$numeroResult[5] = ($numeroMulti) * ($numero[5]);
+$numeroResult[6] = ($numeroMulti) * ($numero[6]);
+$numeroResult[7] = ($numeroMulti) * ($numero[7]);
+$numeroResult[8] = ($numeroMulti) * ($numero[8]);
+$numeroResult[9] = ($numeroMulti) * ($numero[9]);
+
+echo "\n$numeroResult[0]";
+echo "\n$numeroResult[1]";
+echo "\n$numeroResult[2]";
+echo "\n$numeroResult[3]";
+echo "\n$numeroResult[4]";
+echo "\n$numeroResult[5]";
+echo "\n$numeroResult[6]";
+echo "\n$numeroResult[7]";
+echo "\n$numeroResult[8]";
+echo "\n$numeroResult[9]";
