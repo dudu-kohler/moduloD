@@ -1,0 +1,7 @@
+<?php
+$palavras = ["maçã", "banana", "laranja", "uva"];
+
+$string = implode(",", $palavras);
+
+echo $string;
+

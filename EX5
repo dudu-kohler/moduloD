@@ -1,0 +1,17 @@
+<?php
+
+$media = 0 ;
+
+$numeross = [123,45,21,6547,123];
+
+function numeros($numeross){
+    
+
+    return  array_sum($numeross)/count($numeross) ;
+
+
+}
+
+$resultado =  numeros($numeross);
+
+print_r($resultado);

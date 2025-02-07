@@ -1,0 +1,7 @@
+<?php
+$dados = ["nome" => "João","idade" => 25,"cidade" => "São Paulo"];
+
+$chaves = array_keys($dados);
+
+print_r($chaves);
+

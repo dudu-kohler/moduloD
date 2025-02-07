@@ -1,0 +1,16 @@
+<?php
+$resultado = infoa(20);
+
+
+function infoa($n1){
+    return $n1 % 2 == 0 ? 'Par' : 'impar';
+
+    echo $info;
+}
+
+echo $resultado;
+
+
+
+
+

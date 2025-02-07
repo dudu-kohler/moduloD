@@ -1,0 +1,25 @@
+<?php
+
+$numeroC = 0;
+$conta = 0;
+$numeroResult = [];
+do {
+
+    echo "Digite um numero \n";
+    $numero[] = readline();
+
+    if (($numero) >= 0 || $numero <= 0) {
+        $numeroC++;
+    }
+} while (($numeroC) <= 9);
+
+echo"\n($numero[9])";
+echo"\n($numero[8])";
+echo"\n($numero[7])";
+echo"\n($numero[6])";
+echo"\n($numero[5])";
+echo"\n($numero[4])";
+echo"\n($numero[3])";
+echo"\n($numero[2])";
+echo"\n($numero[1])";
+echo"\n($numero[0])";

@@ -1,0 +1,14 @@
+<?php
+
+function palindromo($p1){
+
+    return strrev($p1) == $p1 ? 'é um palindromo' : 'nao é um palindromo'; 
+
+
+
+
+}
+
+$resultado = palindromo('vasoura');
+
+echo $resultado;

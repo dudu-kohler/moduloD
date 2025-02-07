@@ -1,0 +1,15 @@
+<?php
+/*
+echo'digite um numero';
+$n1 = readline();
+echo 'digite outro jnumero';
+$n1 = readline();
+*/
+function randomizar($n1 , $n2){
+
+    return (range($n1 , $n2));
+
+}
+$resultado = randomizar(10 , 20);
+
+print_r($resultado);

@@ -1,0 +1,18 @@
+<?php
+
+$par = 0;
+$numeroC = 0;
+$result = 0;
+do {
+
+    echo "Digite um numero \n";
+    $numero[] = readline();
+    $numeroC++;
+
+    if($numeroC / 2 ==0){
+
+
+        
+    }
+
+} while (($numeroC) <= 5);

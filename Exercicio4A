@@ -1,0 +1,8 @@
+<?php
+$infos = ["nome", "idade", "cidade"];
+$pessoa = ["Jefersson", 73, "Pelotas"];
+
+$respostas = array_combine($infos, $pessoa);
+
+print_r($respostas);
+
