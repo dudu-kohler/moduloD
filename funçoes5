@@ -1,0 +1,15 @@
+<?php
+
+$numeros = [1412,634,26,234,1415,6346,45362456,2456456456456,12361436];
+
+usort($numeros, function ($n1,$n2){
+return $n1 - $n2;
+});
+
+
+
+
+
+print_r($numeros);
+
+

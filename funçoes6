@@ -1,0 +1,13 @@
+<?php
+
+$numeros =  [11452];
+$numeros2 = [12414];
+
+$numeros = array_map(fn($numeros2) => $numeros[0] + $numeros2, $numeros);
+
+print_r($numeros);
+
+
+
+
+

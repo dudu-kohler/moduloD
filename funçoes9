@@ -1,0 +1,16 @@
+<?php
+
+$frutas = ["bananana","melau","milio","jefesson","abacachi"];
+
+$grande = array_map(fn($frutas) => strtoupper($frutas), $frutas);
+
+print_r ($grande);
+
+
+
+
+
+
+
+
+

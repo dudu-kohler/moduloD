@@ -1,0 +1,11 @@
+<?php
+
+$numeros = [20,40,123,40,214,421,4124];
+
+$numero = array_filter ($numeros, function($dados){
+    return ($dados % 2) == 0;
+});
+
+print_r($numero);
+
+

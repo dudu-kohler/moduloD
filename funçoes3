@@ -1,0 +1,13 @@
+<?php
+
+$numeros = [20,40,123,40,214,421,4124];
+
+$numeros = array_map(function($numeros){
+
+    return $numeros * $numeros;
+
+},$numeros);
+
+print_r($numeros);
+
+
