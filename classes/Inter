@@ -1,0 +1,61 @@
+<?php
+
+class Usuarios
+{
+
+    public $ID;
+    public $nome;
+    public $email;
+    public $senha;
+
+
+    public function cadastrar($nome, $email, $senha, $usuario, $cont){
+        if (!$this->email($email, $usuario)) {
+            echo "email ja cadastrado";
+            return $usuario;
+        }
+
+         $u = new Usuarios();
+        $u->ID = $cont;
+        $u->nome = $nome;
+        $u->email = $email;
+
+        $u->senha = $senha;
+    }
+
+
+
+    public function email($email, $usuario)
+    {
+        foreach ($usuario as $u) {
+            if ($u->email = $u->email) {
+                return true;
+            }
+        }
+    }
+
+    public function alterar() {}
+
+    public function deletar() {}
+
+    public function mostrar_td()
+    {
+        $user = new Usuarios();
+        echo $user->ID = $user->ID;
+        echo $user->nome = $user->nome;
+        echo $user->email = $user->email;
+        echo $user->senha = $user->senha;
+    }
+
+    public function busca_email($email)
+    {
+        $user = new Usuarios();
+
+        if ($email_perq = $email) {
+            echo $user->ID = $user->ID;
+            echo $user->nome = $user->nome;
+            echo $user->email = $user->email;
+            echo $user->senha = $user->senha;
+        }
+    }
+}

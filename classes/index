@@ -1,0 +1,50 @@
+<?php
+
+
+
+
+include 'Inter';
+
+
+$cont = 1;
+$usuario = [];
+$op = 0;
+
+while($op !=6){
+
+    echo "Menu Abaixo: \n 1-Cadastrar \n 2-Alterar \n 3-Deletar \n 4-Mostar Todos \n 5-Buscar Pelo Email \n";
+    $op = readline();
+    
+    
+    
+    switch($op){
+    
+        case 1: 
+            $u = new Usuarios;
+            
+            echo "Digite o Nome: \n";
+            $n = readline();
+            echo "Digite o Email: \n";
+            $e = readline();
+            echo "Digite a Senha: \n";
+            $s = readline();
+        
+            $u->cadastrar($n,$e,$s,$usuario,$cont);
+    
+            if($cont == count($usuario)){
+                $cont ++;
+            }
+
+
+
+            break;
+    
+            case 5:
+                echo "Digite o email que deseja ser pesquisado: \n";
+                $email_perq = readline();
+    
+        }
+
+
+
+}
