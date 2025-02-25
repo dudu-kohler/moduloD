@@ -15,7 +15,7 @@ class Usuarios
             return $usuario;
         }
 
-         $u = new Usuarios();
+        $u = new Usuarios();
         $u->ID = $cont;
         $u->nome = $nome;
         $u->email = $email;
@@ -40,11 +40,21 @@ class Usuarios
 
     public function mostrar_td()
     {
+    
         $user = new Usuarios();
         echo $user->ID = $user->ID;
         echo $user->nome = $user->nome;
         echo $user->email = $user->email;
         echo $user->senha = $user->senha;
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 
     public function busca_email($email)

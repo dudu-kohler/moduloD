@@ -39,6 +39,9 @@ while($op !=6){
 
             break;
     
+
+
+            
             case 5:
                 echo "Digite o email que deseja ser pesquisado: \n";
                 $email_perq = readline();
