@@ -1,32 +1,37 @@
 body{
-    background-color:rgba(177, 177, 176, 0.425);
-
+    background-color:rgba(99, 99, 99, 0.425);
+    font-family: 'Roboto', sans-serif;
+    color: black; 
+    
+    
 
 }
 
 
 #menu a {
+    display: row;
+    padding: 10px;
     color: black; 
-    font-size: 18px; 
-    margin: 7px;
+    font-size: 25px; 
+
     font-family: 'Roboto', sans-serif;
+  
 }
 
-#Principal h5{
-  width: 10%;
-  margin: 10px;
-  padding: 10px;
-  background-color: gray; 
-  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1); 
-  color:white;
-  border-radius: 8px; 
+#Colecao img{
+height: 300px;
+
+
+
 }
 
-
-
-#Contato{
-right: auto;
-    width: auto;
+#Contato {
+    display: flex;
     background-color: black;
-    color: white;
+    font: 100;
+    color: aliceblue;
+
+
 }
+
+
