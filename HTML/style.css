@@ -1,25 +1,31 @@
-body{
-    background-color:rgba(99, 99, 99, 0.425);
+body {
+    background-color: rgba(141, 176, 192, 0.699);
     font-family: 'Roboto', sans-serif;
-    color: black; 
-    
-    
+    color: black;
 
 }
 
+/*
+    <img src="https://universohotwheels.com.br/wp-content/uploads/2024/05/1000110764-scaled.jpg" alt="">
+            <img src="1.png" alt="">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_704370-MLB80491227002_112024-O.webp" alt="">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_905334-MLA81747771760_012025-O.webp" alt="">
+            <img src="2.png" alt="">
+*/
 
 #menu a {
-    display: row;
+    
+    margin: 10px;
     padding: 10px;
-    color: black; 
-    font-size: 25px; 
-
+    color: black;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(4, 80, 116, 0.699);
+    border-radius: 60px;
+    font-size: 25px;
     font-family: 'Roboto', sans-serif;
-  
-}
-
-#Colecao img{
-height: 300px;
+    line-height: 60px;
+    text-align: center;  
+      
 
 
 
@@ -28,10 +34,46 @@ height: 300px;
 #Contato {
     display: flex;
     background-color: black;
-    font: 100;
     color: aliceblue;
-
 
 }
 
+#Inicial h3 {
 
+    display: row;
+    padding: 10px;
+    color: black;
+    border-radius: 60px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    
+}
+#Inicial ad {
+
+    margin: 10px;
+    line-height: 500px;
+    
+}
+
+#Achadas img{
+    display: row;
+    margin: 20px;
+    height:  200px;
+    border-radius: 15px;
+
+}
+
+#MenuPag2 a {
+    margin: 10px;
+    padding: 13px;
+    color: black;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(4, 80, 116, 0.699);
+    border-radius: 60px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 60px;
+    text-align: center;  
+
+}
