@@ -1,79 +1,122 @@
-body {
-    background-color: rgba(141, 176, 192, 0.699);
-    font-family: 'Roboto', sans-serif;
-    color: black;
 
+body {
+    margin: 10px;
+    font-family: 'Merriweather', serif;
+    background-color: #1C1C1C;
+    color: white;
 }
 
-/*
-    <img src="https://universohotwheels.com.br/wp-content/uploads/2024/05/1000110764-scaled.jpg" alt="">
-            <img src="1.png" alt="">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_704370-MLB80491227002_112024-O.webp" alt="">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_905334-MLA81747771760_012025-O.webp" alt="">
-            <img src="2.png" alt="">
-*/
 
-#menu a {
-    
+a {
+    background-color: #44444C;
     margin: 10px;
     padding: 10px;
-    color: black;
+    color: #D6D6D6;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-    background-color: rgba(4, 80, 116, 0.699);
     border-radius: 60px;
     font-size: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
     line-height: 60px;
-    text-align: center;  
-      
+    text-align: center;
+    text-decoration: none; 
+    display: row;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; 
+}
 
 
+a:hover {
+    background-color: #6a6a73; 
+    transform: scale(1.05); 
+    color: white; 
+}
+
+
+#menu a,
+#menuPag4 a,
+#MenuPag2 a {
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
 
 }
 
+
 #Contato {
-    display: flex;
+    padding: 5px;
+    display: row; 
     background-color: black;
     color: aliceblue;
+}
 
+#Inicial ad{
+line-height: 1000px;
+margin: 10px;
 }
 
 #Inicial h3 {
-
-    display: row;
     padding: 10px;
     color: black;
     border-radius: 60px;
     font-size: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
     margin: 10px;
-    
-}
-#Inicial ad {
-
-    margin: 10px;
-    line-height: 500px;
-    
 }
 
-#Achadas img{
-    display: row;
-    margin: 20px;
-    height:  200px;
-    border-radius: 15px;
 
-}
-
-#MenuPag2 a {
+#Inicial button {
+    background-color: #44444C;
     margin: 10px;
-    padding: 13px;
-    color: black;
+    padding: 10px;
+    color: #D6D6D6;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-    background-color: rgba(4, 80, 116, 0.699);
     border-radius: 60px;
     font-size: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
     line-height: 60px;
-    text-align: center;  
-
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+
+#Inicial button:hover {
+    background-color: #6a6a73;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+#Achadas img {
+    display: row; 
+    margin: 20px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #44444C;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #6a6a73;
+}
+
+tr:hover {
+    background-color: #888;
+}
+
+
