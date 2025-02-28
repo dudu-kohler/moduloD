@@ -1,0 +1,50 @@
+body {
+    background-color: antiquewhite;
+}
+
+#Parte1 img {
+    margin: 20px;
+    height: 230px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+}
+
+#Parte1 h1{
+    padding: 10px;
+    background-color: rgb(247, 225, 196);
+    border-radius: 10px;
+    width: 260px;
+}
+
+#quem h1{
+    padding: 10px;
+    background-color: rgb(247, 225, 196);
+    border-radius: 10px;
+    width: 140px;
+}
+
+#objetivos h1{
+    padding: 10px;
+    background-color: rgb(247, 225, 196);
+    border-radius: 10px;
+    width: 100px;
+}
+#habilidades h1{
+    padding: 10px;
+    background-color: rgb(247, 225, 196);
+    border-radius: 10px;
+    width: 130px;
+}
+#informacoes2 h1{
+    padding: 10px;
+    background-color: rgb(247, 225, 196);
+    border-radius: 10px;
+    width: 130px;
+}
+
+
+
+#li{
+        list-style-type: circle ;
+}
