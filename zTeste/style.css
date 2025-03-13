@@ -1,5 +1,6 @@
 body {
     background-color: antiquewhite;
+display: grid;
 }
 
 #Parte1 img {
@@ -15,6 +16,7 @@ body {
     background-color: rgb(247, 225, 196);
     border-radius: 10px;
     width: 260px;
+
 }
 
 #quem h1{
@@ -22,6 +24,7 @@ body {
     background-color: rgb(247, 225, 196);
     border-radius: 10px;
     width: 140px;
+
 }
 
 #objetivos h1{

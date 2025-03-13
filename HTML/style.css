@@ -1,11 +1,9 @@
-
 body {
     margin: 10px;
     font-family: 'Merriweather', serif;
     background-color: #1C1C1C;
     color: white;
 }
-
 
 a {
     background-color: #44444C;
@@ -16,84 +14,74 @@ a {
     border-radius: 60px;
     font-size: 25px;
     font-family: 'Merriweather', serif;
-    line-height: 60px;
     text-align: center;
-    text-decoration: none; 
-    display: row;
-    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; 
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
 }
-
 
 a:hover {
-    background-color: #6a6a73; 
-    transform: scale(1.05); 
-    color: white; 
+    background-color: #6a6a73;
+    transform: scale(1.05);
+    color: white;
+}
+#Sobre{
+height: 1000px;
 }
 
 
-#menu a,
-#menuPag4 a,
-#MenuPag2 a {
-    font-size: 25px;
-    line-height: 60px;
-    text-align: center;
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
-
-
-#Contato {
-    padding: 5px;
-    display: row; 
-    background-color: black;
-    color: aliceblue;
-}
-
-#Inicial ad{
-line-height: 1000px;
-margin: 10px;
-}
-
-#Inicial h3 {
-    padding: 10px;
-    color: black;
-    border-radius: 60px;
-    font-size: 25px;
-    font-family: 'Merriweather', serif;
-    margin: 10px;
-}
-
 
 #Inicial button {
     background-color: #44444C;
-    margin: 10px;
     padding: 10px;
     color: #D6D6D6;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 60px;
     font-size: 25px;
-    font-family: 'Merriweather', serif;
-    line-height: 60px;
-    text-align: center;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    
 }
 
-
 #Inicial button:hover {
+    
     background-color: #6a6a73;
     color: white;
     transform: scale(1.05);
 }
 
-
-#Achadas img {
-    display: row; 
-    margin: 20px;
-    height: 200px;
-    border-radius: 15px;
+#Contato {
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
 }
 
+#Achadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+#Achadas img {
+    height: 200px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#Achadas img:hover {
+    transform: scale(1.1);
+}
 
 table {
     width: 100%;
@@ -118,5 +106,102 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #888;
 }
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+        width: 80%;
+        text-align: center;
+    }
+
+    #Achadas img {
+        height: 120px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #Achadas img {
+        height: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    #Achadas img {
+        height: 180px;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px) {
+    body {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 22px;
+        padding: 14px;
+    }
+
+    #Achadas img {
+        height: 220px;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+    body {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 24px;
+        padding: 16px;
+    }
+
+    #Achadas img {
+        height: 240px;
+    }
+}
+
+
+/*
+animacoes novas
+*/
+
+.openBtn{
+    background-color: aqua;
+
+}
+
+
+
+
 
 
