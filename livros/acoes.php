@@ -1,32 +1,32 @@
 <?php
 
-include('banco.qlite.php');
+include('bd.php');
 
 if (!isset($_SESSION)) {
     session_start();
 }
 
-if (isset($_POST['cadastrar_usuario'])) {
+if (isset($_POST['cadastrar_livro'])) {
 
-    if (strlen($_POST['nome']) == 0) {
+    if (strlen($_POST['titulo']) == 0) {
         header('Location: cadastrar.php');
-        $_SESSION['mensagem'] = 'O campo nome é obrigatorio!';
+        $_SESSION['mensagem'] = 'O titulo é obrigatorio!';
         exit();
-    } elseif (strlen($_POST['email']) == 0) {
+    } elseif (strlen($_POST['autor']) == 0) {
         header('Location: cadastrar.php');
-        $_SESSION['mensagem'] = 'O campo email é obrigatorio!';
+        $_SESSION['mensagem'] = 'O autor é obrigatorio!';
         exit();
-    } elseif (strlen($_POST['senha']) == 0) {
+    } elseif (strlen($_POST['descricao']) == 0) {
         header('Location: cadastrar.php');
-        $_SESSION['mensagem'] = 'O campo senha é obrigatorio!';
+        $_SESSION['mensagem'] = 'A descricao é obrigatorio!';
         exit();
     } else {
 
-        $nome = ($_POST['nome']);
-        $email = ($_POST['email']);
-        $senha = ($_POST['senha']);
+        $nome = ($_POST['titulo']);
+        $email = ($_POST['autor']);
+        $senha = ($_POST['descricao']);
 
-        $query = db()->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)");
+        $query = db()->prepare("INSERT INTO usuarios (titulo,autor,descricao) VALUES (:titulo, :autor, :descricao)");
         $user = $query->execute([
             'nome' => $nome,
             'email' => $email,

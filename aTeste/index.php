@@ -24,15 +24,15 @@
 
   <!-- Destaque -->
   <section class="bg-gray-100 py-12">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold text-gray-800">Bem-vindo ao Meu Blog</h2>
-      <p class="mt-4 text-gray-600">Aqui você encontra artigos sobre tecnologia, desenvolvimento e muito mais.</p>
-      <a href="#" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">Ver Posts</a>
+    <div>
+      <h2>Bem-vindo ao Meu Blog</h2>
+      <p>Aqui você encontra artigos sobre tecnologia, desenvolvimento e muito mais.</p>
+      <a href="#" class=>Ver Posts</a>
     </div>
   </section>
-  
+
   <!-- Grade de Posts -->
-  <section class="container mx-auto py-12">
+  <section>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Post 1 -->
       <div class="bg-white shadow-lg rounded-lg overflow-hidden">

@@ -13,8 +13,6 @@ if (strlen($_POST['nomeL']) == 0) {
     $user = $query->execute([
         'nomeL' => $nome
     ]);
-
-    
     
     }
 }
