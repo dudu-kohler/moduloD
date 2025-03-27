@@ -32,7 +32,7 @@ if (!isset($_SESSION)) {
         <?php  $classe = isset($_SESSION['mensagem']) ? 'border-red-900' : '';
         var_dump($classe); ?>
         <label for="nome">Nome</label>
-        <input class="border-2 border-solid <?= $classe ?> " type="text" name="nome"><br>
+        <input type="text" name="nome"><br>
         <label for="email">Email</label>
         <input class="border-2 border-solid" type="email" name="email"><br>
         <label for="Senha">Senha</label>

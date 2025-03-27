@@ -1,14 +1,28 @@
+<?php 
 
-<label for="titulo"> Titulo</label><br>
-<input type="text" name="titulo"><br>
+$db = new PDO('sqlite:banco.sqlite');
 
-<label for="autor"> Autor</label><br>
-<input type="text" name="autor"><br>
+$query = $db->prepare("SELECT * FROM livros");
+$query->execute();
+$usuarios = $query->fetchAll();
 
-<label for="desc"> Descriçao</label><br>
-<input type="text" name="descricao"><br>
+?>
 
-<br>
-<button type="submit">
-    Enviar
-</button>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>senha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach($usuarios as $p): ?>
+        <tr>
+            <td><?= $p['id_usuario'] ?></td>
+            <td><?= $p['nome'] ?></td>
+            <td><?= $p['senha'] ?></td>
+        </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
