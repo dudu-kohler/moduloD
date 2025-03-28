@@ -10,13 +10,6 @@ if (!isset($_SESSION)) {
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
-</head>
-
 <body>
 
     <h1>Cadastrar</h1>
@@ -29,11 +22,10 @@ if (!isset($_SESSION)) {
     ?>
 
     <form action="acoes.php" method="POST">
-        <?php  $classe = isset($_SESSION['mensagem']) ? 'border-red-900' : '';
-        var_dump($classe); ?>
-        <label for="nome">Nome</label>
+        <?php  $classe = isset($_SESSION['mensagem']) ? 'border-red-900' : '';?>
+        <label for="nome">Nome</label><br>
         <input type="text" name="nome"><br>
-        <label for="Senha">Senha</label>
+        <label for="Senha">Senha</label><br>
         <input type="password" name="senha"><br>
         <button type="submit" name="cadastrar_usuario">Cadastrar</button>
     </form>

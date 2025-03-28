@@ -11,7 +11,6 @@ $usuarios = $query->fetchAll();
 <table>
     <thead>
         <tr>
-            <th>ID</th>
             <th>Nome</th>
             <th>senha</th>
         </tr>
