@@ -1,25 +1,21 @@
-<?php
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="POST" action="acoes.php">
+        <label>Nome:</label>
+        <input type="text" name="nome" required><br><br>
+        
+        <label>Senha:</label>
+        <input type="password" name="senha" required><br><br>
 
-if (!isset($_SESSION)) {
-    session_start();
-}
-
-if(isset($_SESSION['id'])){
-    header('Location: painel.php');
-}
-
-?>
-
-<?php
-if (isset($_SESSION['mensagem'])) {
-    echo '<h4>' . $_SESSION['mensagem'] . '</h4>';
-    unset($_SESSION['mensagem']);
-}
-?>
-<form action="acoes.php" method="POST">
-    <label for="">Nome</label>
-    <input type="text" name="nome"><br>
-    <label for="">Senha</label>
-    <input type="password" name="senha"><br>
-    <button type="submit" name="logar">Logar</button>
-</form>
+        <input type="submit" name="login" value="Entrar">
+    </form>
+    <p>Ainda não tem conta? <a href="cadastrar_usuario.php">Cadastre-se</a></p>
+</body>
+</html>

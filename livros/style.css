@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color:#444444 ;
+    color: #d3d3d3;
+    text-align: center;
+}
+
+input, button {
+    padding: 5px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #0080ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mensagem {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.img{
+    height: auto;
+    width: 300px; 
+
+}
